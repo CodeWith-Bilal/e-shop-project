@@ -115,7 +115,7 @@ const Login = () => {
                   <div className="flex flex-col gap-2 text-gray-200">
                     <p>New to website ?</p>
                     <button
-                      className="inline-flex w-full items-center justify-center btn btn-outline btn-info px-6 py-4 text-lg 
+                      className="inline-flex w-full items-center justify-center btn btn-outline btn-info text-lg 
                        transition-all duration-200 ease-in-out focus:shadow font-medium uppercase tracking-wide
                        "
                       onClick={() => router.push("/register")}

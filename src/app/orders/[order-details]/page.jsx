@@ -29,7 +29,7 @@ const OrderDetails = () => {
           setPageLevelLoader(false);
         }
     
-        console.log(res);
+        
       }
     
       useEffect(() => {

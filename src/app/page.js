@@ -5,8 +5,8 @@ import { getAllAdminProducts } from "@/services/product";
 // import { getAllAdminProducts } from "@/services/product";
 import { useRouter } from "next/navigation";
 import { useContext, useEffect, useState } from "react";
-import { Tektur } from 'next/font/google'
-const oswald = Tektur({ subsets: ['latin'] })
+import { Tektur } from "next/font/google";
+const oswald = Tektur({ subsets: ["latin"] });
 
 export default function Home() {
   const { isAuthUser } = useContext(GlobalContext);
@@ -34,7 +34,7 @@ export default function Home() {
         <div className="grid max-w-screen-xl px-4 py-8 mx-suto  lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="text-gray-100 max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
-             <span className={oswald.className}>Best Fashion Collection</span> 
+              <span className={oswald.className}>Best Fashion Collection</span>
             </h1>
             <p className="max-w-2xl mb-6 font-light text-gray-300 lg:mb-8 md:text-lg lg:text-xl">
               Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img
-              src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              src="https://img.freepik.com/free-photo/dark-haired-woman-with-red-lipstick-smiles-leans-stand-with-clothes-holds-package-pink-background_197531-17609.jpg"
               alt="Explore Shop Collection"
             />
           </div>
@@ -120,7 +120,7 @@ export default function Home() {
             <li>
               <div className="relative block group">
                 <img
-                  src="https://images.unsplash.com/photo-1618898909019-010e4e234c55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                  src="https://bbgfashion.pk/cdn/shop/products/BlueSpaceshipKidswear.png?v=1665216152"
                   className="object-cover w-full aspect-square"
                 />
                 <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
@@ -137,7 +137,7 @@ export default function Home() {
             <li>
               <div className="relative block group">
                 <img
-                  src="https://images.unsplash.com/photo-1624623278313-a930126a11c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                  src="https://www.dressyzone.com/cdn/shop/products/p13297-embroidered-net-kurti-with-inner-update_580x.jpg?v=1659171451"
                   className="object-cover w-full aspect-square"
                 />
                 <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
@@ -154,7 +154,7 @@ export default function Home() {
             <li className="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
               <div className="relative block group">
                 <img
-                  src="https://images.unsplash.com/photo-1593795899768-947c4929449d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80"
+                  src="https://static-01.daraz.pk/p/ecf4e54ce3fdb41d4a985eea2783d4bf.jpg"
                   className="object-cover w-full aspect-square"
                 />
                 <div className="absolute inset-0 flex flex-col items-start justify-end p-6">

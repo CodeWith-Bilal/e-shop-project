@@ -65,7 +65,7 @@ export const navOptions = [
       type: "",
       placeholder: "",
       label: "Role",
-      componentType: "select",
+      componentType: "",
       options: [
         {
           id: "admin",

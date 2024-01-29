@@ -48,7 +48,7 @@ async function helperForUPloadingImageToFirebase(file) {
       "state_changed",
       (snapshot) => {},
       (error) => {
-        console.log(error);
+        //
         reject(error);
       },
       () => {

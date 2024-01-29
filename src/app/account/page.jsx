@@ -55,7 +55,7 @@ const Account = () => {
               })
             : await addNewAddress({ ...addressFormData, userID: user?._id });
     
-        console.log(res);
+        //
     
         if (res.success) {
           setComponentLevelLoader({ loading: false, id: "" });
@@ -213,7 +213,7 @@ const Account = () => {
                     </div>
                     <button
                       onClick={handleAddOrUpdateAddress}
-                      className="mt-5 w-96 inline-block btn btn-outline btn-accent px-5 py-3 text-xs font-medium uppercase tracking-wide"
+                      className="mt-5 w-96 inline-block btn btn-outline btn-accent px-5 py-3 bg-gray-800 text-white text-xs font-medium uppercase tracking-wide"
                     >
                       {componentLevelLoader && componentLevelLoader.loading ? (
                         <ComponentLevelLoader

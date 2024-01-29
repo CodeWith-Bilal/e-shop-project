@@ -51,7 +51,7 @@ const ProductButton = ({item}) => {
         setShowCartModal(true)
       }
   
-      console.log(res);
+    
     }
   
     return isAdminView ? (
