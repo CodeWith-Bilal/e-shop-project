@@ -9,6 +9,7 @@ import { usePathname, useRouter } from "next/navigation";
 import CartModal from "../CartModal/page";
 import CommonModal from "../CommonModal/page";
 import { Tektur } from 'next/font/google'
+import Link from "next/link";
 const oswald = Tektur({ subsets: ['latin'] })
 
 function NavItems({ isModalView = false, isAdminView, router }) {
@@ -40,7 +41,7 @@ function NavItems({ isModalView = false, isAdminView, router }) {
                 key={item.id}
                 onClick={() => router.push(item.path)}
               >
-                {item.label}
+                <Link href={item.path}>{item.label}</Link>
               </li>
             ))}
       </ul>
