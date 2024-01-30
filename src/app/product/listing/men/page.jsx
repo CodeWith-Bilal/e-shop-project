@@ -4,6 +4,7 @@ import React from 'react'
 
  async function MenAllProducts() {
     const getAllProducts = await productByCategory("men");
+
     return <CommonListing data={getAllProducts && getAllProducts.data} />;
   }
 

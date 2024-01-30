@@ -6,8 +6,8 @@ import { fetchAllAddresses } from "@/services/address";
 import { createNewOrder } from "@/services/order";
 import { callStripeSession } from "@/services/stripe";
 import { loadStripe } from "@stripe/stripe-js";
-import { useRouter } from "next/navigation";
-import React,{ Suspense, useContext, useEffect, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import React,{ useContext, useEffect, useState } from "react";
 import { PulseLoader } from "react-spinners";
 import { toast } from "react-toastify";
 const Checkout = () => {
@@ -25,7 +25,7 @@ const Checkout = () => {
       const [orderSuccess, setOrderSuccess] = useState(false);
     
       const router = useRouter();
-      // const params = useSearchParams();
+      const params = useSearchParams();
     
       const publishableKey =process.env.PUBLISHABLE_KEY;
       const stripePromise = loadStripe(publishableKey);
@@ -50,7 +50,7 @@ const Checkout = () => {
     
           if (
             isStripe &&
-            // params.get("status") === "success" &&
+            params.get("status") === "success" &&
             cartItems &&
             cartItems.length > 0
           ) {
@@ -91,7 +91,7 @@ const Checkout = () => {
         }
     
         createFinalOrder();
-      }, [cartItems]);
+      }, [params.get("status"), cartItems]);
     
       function handleSelectedAddress(getAddress) {
         if (getAddress._id === selectedAddress) {
@@ -190,7 +190,6 @@ const Checkout = () => {
     
       return (
         <div>
-          <Suspense fallback={null}>
           <div className="grid sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-32 bg-gray-800">
             <div className="px-4 pt-8">
               <p className="font-medium text-xl">Cart Summary</p>
@@ -303,9 +302,8 @@ const Checkout = () => {
             </div>
           </div>
           <Notification />
-          </Suspense>
         </div>
       );
-}
+    }
 
 export default Checkout
