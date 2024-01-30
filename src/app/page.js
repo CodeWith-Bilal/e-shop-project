@@ -2,7 +2,6 @@
 
 import { GlobalContext } from "@/context";
 import { getAllAdminProducts } from "@/services/product";
-// import { getAllAdminProducts } from "@/services/product";
 import { useRouter } from "next/navigation";
 import { useContext, useEffect, useState } from "react";
 import { Tektur } from "next/font/google";
@@ -17,7 +16,7 @@ export default function Home() {
   async function getListOfProducts() {
     const res = await getAllAdminProducts();
 
-    if (res.success) {
+    if (res?.success) {
       setProducts(res.data);
     }
   }
