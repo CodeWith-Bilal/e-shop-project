@@ -29,14 +29,12 @@ export async function POST(req) {
         });
       }
 
-      console.log(productID, userID);
 
       const isCurrentCartItemAlreadyExists = await Cart.find({
         productID: productID,
         userID: userID,
       });
 
-      console.log(isCurrentCartItemAlreadyExists);
       
 
       if (isCurrentCartItemAlreadyExists?.length > 0) {
@@ -49,7 +47,6 @@ export async function POST(req) {
 
       const saveProductToCart = await Cart.create(data);
 
-      console.log(saveProductToCart);
 
       if (saveProductToCart) {
         return NextResponse.json({
@@ -69,7 +66,6 @@ export async function POST(req) {
       });
     }
   } catch (e) {
-    console.log(e);
     return NextResponse.json({
       success: false,
       message: "Something went wrong ! Please try again later",

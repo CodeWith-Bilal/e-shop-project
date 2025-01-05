@@ -15,7 +15,6 @@ export const addNewAddress = async (formData) => {
 
     return data;
   } catch (e) {
-    console.log(e);
   }
 };
 
@@ -32,7 +31,6 @@ export const fetchAllAddresses = async (id) => {
 
     return data;
   } catch (e) {
-    console.log(e);
   }
 };
 
@@ -51,7 +49,6 @@ export const updateAddress = async (formData) => {
 
     return data;
   } catch (e) {
-    console.log(e);
   }
 };
 
@@ -68,6 +65,5 @@ export const deleteAddress = async (id) => {
 
     return data;
   } catch (e) {
-    console.log(e);
   }
 };

@@ -17,7 +17,6 @@ export const addNewProduct = async (formData) => {
 
     return data;
   } catch (error) {
-    console.log(error);
   }
 };
 
@@ -32,7 +31,6 @@ export const getAllAdminProducts = async () => {
 
     return data;
   } catch (error) {
-    console.log(error);
   }
 };
 
@@ -52,7 +50,6 @@ export const updateAProduct = async (formData) => {
 
     return data;
   } catch (e) {
-    console.log(e);
   }
 };
 
@@ -69,7 +66,6 @@ export const deleteAProduct = async (id) => {
 
     return data;
   } catch (e) {
-    console.log(e);
   }
 };
 
@@ -87,7 +83,6 @@ export const productByCategory = async (id) => {
 
     return data;
   } catch (e) {
-    console.log(e);
   }
 };
 
@@ -105,6 +100,5 @@ export const productById = async (id) => {
 
     return data;
   } catch (e) {
-    console.log(e);
   }
 };

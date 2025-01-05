@@ -15,7 +15,6 @@ export const createNewOrder = async (formData) => {
 
     return data;
   } catch (e) {
-    console.log(e);
   }
 };
 
@@ -32,7 +31,6 @@ export const getAllOrdersForUser = async (id) => {
 
     return data;
   } catch (e) {
-    console.log(e);
   }
 };
 
@@ -49,7 +47,6 @@ export const getOrderDetails = async (id) => {
 
     return data;
   } catch (e) {
-    console.log(e);
   }
 };
 
@@ -66,7 +63,6 @@ export const getAllOrdersForAllUsers = async () => {
 
     return data;
   } catch (e) {
-    console.log(e);
   }
 };
 
@@ -85,6 +81,5 @@ export const updateStatusOfOrder = async (formData) => {
 
     return data;
   } catch (e) {
-    console.log(e);
   }
 };
