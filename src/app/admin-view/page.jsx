@@ -20,7 +20,6 @@ const AddminView = () => {
         setPageLevelLoader(true);
         const res = await getAllOrdersForAllUsers();
     
-      //
     
         if (res.success) {
           setPageLevelLoader(false);
@@ -38,7 +37,6 @@ const AddminView = () => {
         if (user !== null) extractAllOrdersForAllUsers();
       }, [user]);
     
-      //
     
       async function handleUpdateOrderStatus(getItem) {
         setComponentLevelLoader({ loading: true, id: getItem._id });

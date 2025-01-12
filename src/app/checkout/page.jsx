@@ -25,12 +25,10 @@ const Checkout = () => {
       const [orderSuccess, setOrderSuccess] = useState(false);
     
       const router = useRouter();
-      // const params = useSearchParams();
     
       const publishableKey =process.env.PUBLISHABLE_KEY;
       const stripePromise = loadStripe(publishableKey);
     
-    //
     
       async function getAllAddresses() {
         const res = await fetchAllAddresses(user?._id);
@@ -50,7 +48,6 @@ const Checkout = () => {
     
           if (
             isStripe &&
-            // params.get("status") === "success" &&
             cartItems &&
             cartItems.length > 0
           ) {
@@ -142,15 +139,12 @@ const Checkout = () => {
           sessionId: res.id,
         });
     
-        //
       }
     
-      //
     
       useEffect(() => {
         if (orderSuccess) {
           setTimeout(() => {
-            // setOrderSuccess(false);
             router.push("/orders");
           }, [2000]);
         }

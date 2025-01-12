@@ -37,7 +37,6 @@ const Orders = () => {
         if (user !== null) extractAllOrders();
       }, [user]);
     
-      //    
       if (pageLevelLoader) {
         return (
           <div className="w-full min-h-screen flex justify-center items-center">

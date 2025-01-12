@@ -63,7 +63,6 @@ const Navbar = () => {
     const pathName = usePathname();
     const router = useRouter();
   
-    //
   
     useEffect(() => {
       if (

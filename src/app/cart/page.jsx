@@ -3,7 +3,6 @@
 import CommonCart from "@/components/CommonCart/page";
 import { GlobalContext } from "@/context";
 import { deleteFromCart, getAllCartItems } from "@/services/cart";
-// import { deleteFromCart, getAllCartItems } from "@/services/cart";
 import React,{ useContext, useEffect } from "react";
 import { PulseLoader } from "react-spinners";
 import { toast } from "react-toastify";

@@ -24,7 +24,6 @@ import {
 import { useRouter } from "next/navigation";
 import { useContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import { resolve } from "styled-jsx/css";
 
 
 const AdminAddNewProduct = () => {
@@ -48,7 +47,6 @@ async function helperForUPloadingImageToFirebase(file) {
       "state_changed",
       (snapshot) => {},
       (error) => {
-        //
         reject(error);
       },
       () => {
@@ -80,7 +78,6 @@ const initialFormData = {
     setCurrentUpdatedProduct,
   } = useContext(GlobalContext);
 
-  //
 
   const router = useRouter();
 
@@ -124,7 +121,6 @@ const initialFormData = {
         ? await updateAProduct(formData)
         : await addNewProduct(formData);
 
-    //
 
     if (res.success) {
       setComponentLevelLoader({ loading: false, id: "" });
@@ -142,7 +138,6 @@ const initialFormData = {
     }
   }
 
-  //
 
   return (
     <div className="w-full mt-5 mr-0 mb-0 ml-0 relative">
