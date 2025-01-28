@@ -24,7 +24,6 @@ const Register = () => {
   
     const router = useRouter()
   
-//
   
     function isFormValid() {
       return formData &&
@@ -38,7 +37,6 @@ const Register = () => {
         : false;
     }
   
-    //
   
     async function handleRegisterOnSubmit() {
       setPageLevelLoader(true);
@@ -55,7 +53,6 @@ const Register = () => {
         setFormData(initialFormData);
       }
   
-      //
     }
   
     useEffect(() => {

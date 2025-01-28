@@ -47,7 +47,6 @@ const CartModal = () => {
           localStorage.setItem("cartItems", JSON.stringify(updatedData));
         }
     
-        //
       }
     
       useEffect(() => {

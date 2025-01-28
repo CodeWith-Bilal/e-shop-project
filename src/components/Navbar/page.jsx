@@ -3,7 +3,6 @@
 import { GlobalContext } from "@/context";
 import { adminNavOptions, navOptions } from "@/utils";
 import React,{ Fragment, useContext, useEffect } from "react";
-// import CommonModal from "../CommonModal";
 import Cookies from "js-cookie";
 import { usePathname, useRouter } from "next/navigation";
 import CartModal from "../CartModal/page";
